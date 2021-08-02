@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    min-height: 590px;
+    background-image: url(./depositphotos_406412502-stock-photo-beautiful-summer-sunrise-daisy-field.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 40%;
+    height: max-content;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255, 0.4);
+    font-weight: bold;
+    color: black;
+}
+
+.br {
+    display: none;
+}
+
+@media only screen and (max-width: 735px){
+    .br {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    body {
+        align-items: flex-start;
+    }
+    .container {
+        width: 80%;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+
+.inputCity {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin: 20px 0px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgb(253, 253, 87);
+    color: black;
+    border: 1px solid black;
+    outline: none;
+}
