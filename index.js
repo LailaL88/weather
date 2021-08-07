@@ -1,9 +1,8 @@
-import {api_key} from "./config.js";
 const btn = document.querySelector(".btn");
 let city = document.querySelector(".inputCity");
 
 function getWeather(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=' + api_key+ '&units=metric')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city.value + '&appid=edcf838ddc8b8a2df699fb7127160fda&units=metric')
     .then(response => response.json())
     .then(data => {
        let p = document.createElement("p");
